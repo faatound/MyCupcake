@@ -10,7 +10,7 @@ export default function CartModal({ isOpen, onClose }: { isOpen: boolean; onClos
   const { items, total, removeFromCart, updateQuantity } = useCart();
 
   const handleOrder = () => {
-    const phoneNumber = "+221776162820";
+    const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+221776162820";
     const itemsList = items
       .map((item) => `${item.name} (x${item.quantity})`)
       .join("\n");

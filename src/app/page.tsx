@@ -189,7 +189,7 @@ export default function Home() {
             Nous sommes là pour adoucir votre journée. Discutez avec nous sur WhatsApp pour vos commandes personnalisées ou toute information.
           </p>
           <motion.a
-            href="https://wa.me/+221776162820"
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "+221776162820"}`}
             target="_blank"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
