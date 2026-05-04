@@ -39,6 +39,34 @@ const products = [
     image: "/images/hero-brownies.png",
     category: "Brownies",
   },
+  {
+    id: "tarte-fraise",
+    name: "Tarte à la Fraise",
+    price: 6500,
+    image: "/images/tarte-fraise.png",
+    category: "Tartes",
+  },
+  {
+    id: "tarte-citron",
+    name: "Tarte au Citron",
+    price: 6500,
+    image: "/images/tarte-citron.png",
+    category: "Tartes",
+  },
+  {
+    id: "tarte-pomme",
+    name: "Tarte aux Pommes",
+    price: 6500,
+    image: "/images/tarte-pomme.png",
+    category: "Tartes",
+  },
+  {
+    id: "tarte-peche",
+    name: "Tarte aux Pêches",
+    price: 6500,
+    image: "/images/tarte-peche.png",
+    category: "Tartes",
+  },
 ];
 
 const testimonials = [
@@ -108,6 +136,8 @@ export default function Home() {
               src="/images/bakery-workspace.png"
               alt="Notre Pâtisserie"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              priority
               className="object-cover"
             />
           </motion.div>

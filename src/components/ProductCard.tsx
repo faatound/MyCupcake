@@ -36,6 +36,7 @@ export default function ProductCard({ id, name, price, image, category }: Produc
           src={image}
           alt={name}
           fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           className="object-cover group-hover:scale-110 transition-transform duration-700"
         />
         <div className="absolute top-4 left-4">

@@ -46,6 +46,7 @@ export default function Hero() {
             src={slides[current].image}
             alt="Pâtisserie"
             fill
+            sizes="100vw"
             className="object-cover brightness-95"
             priority
           />
