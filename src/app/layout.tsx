@@ -40,6 +40,7 @@ export default function RootLayout({
         <CartProvider>
           <div className="noise" />
           {children}
+          <Analytics />
         </CartProvider>
       </body>
     </html>
